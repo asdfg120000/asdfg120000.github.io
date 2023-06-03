@@ -283,6 +283,7 @@
             }
         }
 
+        
 
 
 
@@ -356,8 +357,7 @@
             align-items: center;
         }
 
-        .li11 {}
-
+        
         .li11:hover {
             border-radius: 5px;
             color: black;
@@ -741,11 +741,15 @@
                 <br>
                 <h1>[파티 초대장]</h1>
                 <h1>_________________</h1>
+                <div class="vuswl0" >
                 <div class="vus1">
                     <a href="vuswl1" class="vuswl1"><img class="buttermade" id="vuswl1" alt="homebe12" src="./img/vuswl4.png"></a>
                 </div>
-                <div class="vus2" style="display: none;"><img class="buttermade" src="./img/vuswl3.png"></div>
-                <img class="buttermade" alt="homebe12" src="./img/home12.png.gif">
+                <div class="vus2" style="display: none;"><img class="buttermade" src="./img/vuswl7.png"></div>
+            </div>
+            <h3>_________________</h3>    
+            <img class="buttermade" alt="homebe12" src="./img/home12.png.gif">
+                
                 <p class="pcir">▲파티를 준비하고 있는 쿠키들</p>
             </div>
             <div>
@@ -785,9 +789,9 @@
             <div class="pib3">
 
 
-                <div class="li11"><a href="#2-1" id="pub2-1">1. 건물</a></div>
+                <div class="li11"><a href="#2-1" id="pub2-1" style="color: #000000;"><b>1. 건물 ←</b></a></div>
                 <br>
-                <div class="li11"><a href="#2-2" id="pub2-2">2. 쿠키</a></div>
+                <div class="li11"><a href="#2-2" id="pub2-2" style="color: #000000;"><b>2. 쿠키</b></a></div>
 
 
             </div>
@@ -997,6 +1001,8 @@
                 event.preventDefault();
                 $(".pib").css('display', 'block');
                 $(".pib2").css('display', 'none');
+                $("#pub2-1").text('1. 건물 ←');
+                $("#pub2-2").text('2. 쿠키');
                 
             });
 
@@ -1005,6 +1011,8 @@
                 event.preventDefault();
                 $(".pib").css('display', 'none');
                 $(".pib2").css('display', 'block');
+                $("#pub2-1").text('1. 건물');
+                $("#pub2-2").text('2. 쿠키 ←');
                 
             });
 
