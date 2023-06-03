@@ -730,10 +730,9 @@
                 <h1>[파티 초대장]</h1>
                 <h1>_________________</h1>
                 <div class="vus1">
-                    <a href="vuswl1" class="vuswl1"><img class="buttermade" id="vuswl1" alt="homebe12"
-                            src="./vuswl4.png"></a>
+                    <a href="vuswl1" class="vuswl1"><img class="buttermade" id="vuswl1" alt="homebe12" src="./img/vuswl4.png"></a>
                 </div>
-                <div class="vus2" style="display: none;"><img class="buttermade" src="./vuswl3.png"></div>
+                <div class="vus2" style="display: none;"><img class="buttermade" src="./img/vuswl3.png"></div>
                 <img class="buttermade" alt="homebe12" src="./img/home12.png.gif">
                 <p>▲파티를 준비하고 있는 쿠키들</p>
             </div>
@@ -922,7 +921,7 @@
                     이번에 제가 좋아하는 게임중 하나인 쿠키런 킹덤이란 게임을 주제로 웹페이지를 만들어 보았습니다.
                     작은 쿠키들을 모으고 왕국을 꾸미는 것은 제가 좋아하는 것중 하나입니다.
                     쿠키들이 상호작용을 하고 말풍선이 하나 둘씩 떠오르는 것을 동영상으로 모으는 것도 좋아합니다.
-                    쿠키런 킹덤 완전 재밌습니다. 한 30주년까지 계속 하고 싶습니다.
+                    쿠키런 킹덤 완전 재밌습니다. 한 30주년까지 계속하고 싶습니다.
 
 
                 </div>
@@ -954,15 +953,9 @@
                 $("#pubContent").css('display', 'none');
                 $("#cookie1Content").css('display', 'none');
                 $("#cookie2Content").css('display', 'none');
+                $(location).attr("href", "#1");
             });
 
-            $(".homeLink1").click(function (event) {
-                event.preventDefault();
-                $("#homeContent").css('display', 'block');
-                $("#pubContent").css('display', 'none');
-                $("#cookie1Content").css('display', 'none');
-                $("#cookie2Content").css('display', 'none');
-            });
 
             $("#pubLink").click(function (event) {
                 event.preventDefault();
@@ -970,15 +963,10 @@
                 $("#pubContent").css('display', 'block');
                 $("#cookie1Content").css('display', 'none');
                 $("#cookie2Content").css('display', 'none');
+                $(location).attr("href", "#2-1");
             });
 
-            $("#cookie1").click(function (event) {
-                event.preventDefault();
-                $("#homeContent").css('display', 'none');
-                $("#pubContent").css('display', 'none');
-                $("#cookie1Content").css('display', 'block');
-                $("#cookie2Content").css('display', 'none');
-            });
+            
 
             $("#cookie2").click(function (event) {
                 event.preventDefault();
@@ -986,6 +974,7 @@
                 $("#pubContent").css('display', 'none');
                 $("#cookie1Content").css('display', 'none');
                 $("#cookie2Content").css('display', 'block');
+                $(location).attr("href", "#3");
             });
 
             /* pub네비*/
@@ -993,13 +982,14 @@
                 event.preventDefault();
                 $(".pib").css('display', 'block');
                 $(".pib2").css('display', 'none');
+                $(location).attr("href", "#2-1");
             });
 
             $("#pub2-2").click(function (event) {
                 event.preventDefault();
                 $(".pib").css('display', 'none');
                 $(".pib2").css('display', 'block');
-
+                $(location).attr("href", "#2-2");
             });
 
 
