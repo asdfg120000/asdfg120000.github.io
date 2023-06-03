@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>h202210987</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        :root {
+            --text-color: #f0f4f5;
+            --background-color: #4f343d;
+            --accent-color: rgb(87, 170, 166)
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Source Sans Pro';
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #897268;
+            padding: 8px 12px;
+        }
+
+        .navbar__logo {
+            font-size: 24px;
+            color: rgb(200, 181, 72);
+        }
+
+        .navbar__menu li {
+            padding: 10px 20px;
+        }
+
+        .navbar__icons {
+            list-style: none;
+            display: flex;
+            color: white;
+            padding-left: 0px;
+        }
+
+
+        .navbar__menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .navbar__menu li {
+            padding: 8px 13px;
+        }
+
+        .navbar__menu li:hover {
+            background-color: rgb(200, 181, 72);
+            border-radius: 5px;
+        }
+
+        .navbar__icons li {
+            padding: 10px;
+        }
+
+        .navbar__toggleBtn {
+            display: none;
+        }
+
+        .menubt {
+            font-size: 100%;
+        }
+
+        #cookie2Content {
+            display: flex;
+        }
+
+
+
+
+        /*1번**************************************************00*/
+
+        .body1 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('./img/back12.png');
+
+        }
+        .backblack {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('./img/backgroundblck.png');
+
+        }
+        .backblack{
+            color:#e8e6e3;
+        }
+
+        #homeLink {
+            transform-origin: 50% 0%;
+            animation-name: shake;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.5s;
+        }
+
+        .gradi1,
+        .bodyintro {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .pidb {
+            margin: 10px 0px;
+            width: 10%;
+            height: 100px;
+            background-color: #e3f2fd;
+        }
+
+        #buttonA {
+            background-image: linear-gradient(to top right, rgb(49, 29, 29), rgb(197, 70, 70));
+
+
+        }
+
+        #buttonB {
+            background-image: linear-gradient(to top right, rgb(34, 35, 43), rgb(110, 150, 153));
+        }
+
+        .content {
+            color: #000000;
+            transition: 1s;
+            opacity: 1;
+            width: 100%;
+            text-align: center;
+        }
+
+        .rpbu {
+            margin: 10px 0px;
+            width: 10%;
+            height: 100px;
+            background-color: #e3f2fd;
+        }
+
+        #cookielogo {
+            max-width: 100%;
+            max-height: 100%;
+            animation: ani 1s infinite alternate;
+        }
+
+        .introPD,
+        .introPD1 {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .introRM {
+            display: inline;
+
+        }
+
+        .intro1 {
+            font-weight: bold;
+            font-size: 250%;
+
+        }
+
+        .intro1-1 {
+            font-size: 110%;
+        }
+
+        .intro1-2 {
+            font-size: 200%;
+        }
+
+        .rmskle {
+            float: left;
+            width: 30%;
+        }
+
+        .pdragingph {
+            display: inline-block;
+            width: 60%;
+        }
+
+        .dydrhk {
+            padding: 0%;
+
+        }
+
+        .cookiename {
+            font-weight: bold;
+            font-size: 120%;
+        }
+
+        .w {
+            text-align: left;
+        }
+
+        .rmskri {
+            margin-right: 20%;
+        }
+
+        @keyframes ani {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(0, 20px);
+            }
+        }
+
+        .piDrC11 {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .buttermade {
+            width: 30%;
+        }
+
+        .rmskle {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .picdiv {
+            align-items: right;
+        }
+
+        .butterup {
+            width: 30%;
+        }
+
+        .downpho {
+            width: 20%;
+        }
+
+        .goodw {
+            width: 30%;
+        }
+
+        #vuswl1 {
+            animation: bell 1.5s infinite;
+        }
+
+        @keyframes bell {
+
+            0%,
+            50% {
+                transform: rotate(0deg);
+            }
+
+            5%,
+            15%,
+            25%,
+            35%,
+            45% {
+                transform: rotate(13deg);
+            }
+
+            10%,
+            20%,
+            30%,
+            40% {
+                transform: rotate(-13deg);
+            }
+        }
+
+
+
+
+
+
+        /* 두번째*/
+
+        .gifmom {
+            height: 100%;
+
+            justify-content: center;
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        .gikmo {
+            font-weight: bold;
+            font-size: 120%;
+
+
+        }
+
+        .mo1,
+        .mo2,
+        .mo3,
+        .mo4 {
+            align-items: center;
+            margin: 10%;
+        }
+
+        .mo1-1 {
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+
+
+        .giggg {
+            width: 105%;
+        }
+
+        .content2h1 {
+            margin: 0%;
+        }
+
+        .content2p {
+            font-size: 80%;
+        }
+
+
+        #pid3menu {
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+
+            align-items: center;
+
+        }
+
+        .lii {
+            margin: 0%;
+            padding: 0%;
+        }
+
+
+        .pib33 {
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .li11 {}
+
+        .li11:hover {
+            border-radius: 5px;
+            color: black;
+            opacity: 0.4;
+        }
+
+
+
+
+        /*3*/
+        #a41 {
+            width: 10%;
+        }
+
+        .meintro {
+            float: left;
+        }
+
+        /*맨 아래*/
+
+        .foot {
+            text-align: center;
+            background-color: #e8e6e3;
+        }
+
+        .conti {
+            height: 50%;
+            width: 100%;
+        }
+
+        .view {
+            background-image: url('./img/adver.gif');
+
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .piDrC,
+        .piDrC1 {
+            animation: ani 1s infinite alternate;
+        }
+
+        .dydrhk {
+            margin-bottom: 0%;
+            padding-bottom: 5%;
+        }
+
+        .content2p {
+            font-size: 120%;
+        }
+
+        .meintro {
+            width: 30%;
+        }
+        .as2020{
+            width: 30%;
+        }
+        #as2222{
+            text-align: left;
+            padding-left: 15%;
+
+        }
+        #as2021{
+            padding-right: 7%;
+        }
+
+
+        @media screen and (min-width: 994px) {
+            .rmskle {
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                float: left;
+                width: 50;
+            }
+        }
+
+
+
+
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 24px;
+            }
+
+            .navbar__menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .navbar__menu li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar__icons {
+                display: none;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .navbar__toggleBtn {
+                display: block;
+                position: absolute;
+                right: 20px;
+                font-size: 24px;
+                color: rgb(200, 181, 72);
+            }
+
+            .navbar__menu.active,
+            .navbar__icons.active {
+                display: flex;
+                transition: 1s ease-out;
+            }
+
+            #cookielogo #pubContent {
+                width: auto;
+            }
+
+            .homeLink {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            #a41 {
+                width: 15%;
+            }
+
+            #gifmom {
+                width: 70%;
+            }
+
+            .piDrC,
+            .piDrC1 {
+                width: 80%;
+            }
+
+            .giggg {
+                width: 175%;
+            }
+
+            #piDRCS {
+                width: 80%
+            }
+
+            #fff,
+            .introp1,
+            .introp {
+                font-size: 10px;
+            }
+
+            .rmskri {
+                margin-right: 5%;
+            }
+
+            .body2h1 {
+                font-size: 90%;
+            }
+
+            .mo1-1 {
+                text-align: center;
+                padding: 0%;
+                margin: 0%;
+
+            }
+
+            .buttermade {
+                width: 70%;
+            }
+
+            p {
+                font-size: 20%;
+            }
+
+            .butterup {
+                width: 80%;
+            }
+
+            .downpho {
+                width: 60%;
+            }
+
+            .goodw {
+                width: 80%;
+            }
+
+            .pib33 .navbar__menu {
+                display: block;
+                flex-direction: column;
+                align-items: center;
+            }
+            #as2222{
+                font-size: 80%;
+            }
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="#1" id="homeLink" class="homeLink">COOKIERUN KINGDOM</a>
+        </div>
+        <ul class="navbar__menu">
+            <li><a href="#1" id="homeLink" class="homeLink">Home</a></li>
+            <li><a href="#2" id="pubLink">상호작용</a></li>
+            <li><a href="#4" id="cookie2">제작</a></li>
+        </ul>
+
+        <a href="#" class="navbar__toggleBtn">
+            <i class="menubt">三</i>
+        </a>
+    </nav>
+
+    <div class="body1">
+        <!------------첫번째 블록------------------>
+        <div class="content" id="homeContent">
+
+            <div class="gradi1">
+                <br>
+                <br>
+                <img id="cookielogo" alt="cookierun" src="./img/cookierunKingdomLogo.png">
+            </div>
+
+            <!--border-style: dotted double dashed black-->
+            <div class="bodyintro">
+                <br><br><br><br><br>
+                <h1>_________________</h1>
+                <div class="intro1">이달의 소식</div>
+
+                <br><br>
+                <div class="intro1-1"><b>용과 드래곤 쿠키와<br>로얄마가린맛 쿠키가
+                        <br>우리 왕국으로 이사왔습니다!
+                        <br>모두 축하해주세요!</b>
+                </div>
+                <br><br>
+                <h4>_____________________</h4>
+                <h1>새로운 이웃 소개</h1>
+            </div>
+
+            <div class="introPD">
+                <div><img class="piDrC" alt="Pitaya Dragon Cookie" src="./img/pitaDCoo-removebg-preview.png"></div>
+                <div class="cookiename">용과 드래곤 쿠키</div>
+                <p class="introp">___________________________________</p>
+                <div class="rmskle" style="text-align: right;"><img id="piDRCS" alt="PDSkill"
+                        src="./img/pitaDCOOSkill-removebg-preview.png" style="text-align: right;"></div>
+                <div class="rmskri">
+
+                    <br><b>
+                        [스킬: 드래곤 검술]
+                        드래곤 검술을 사용하여 검기를 2회 날려보내 피해를 입히고 받는 회복량 감소시키고, 브레스를 발사해 피해를 입히고 공격력을 감소. 강화된 스킬 사용 시 용으로
+                        변신하여 브레스를 발사해 피해를 입히고 불 속성 피해증가를 부여. 쿨타임 : 13초</b>
+                </div>
+            </div>
+
+            <br> <br> <br> <br>
+            <p class>_ _ _ _ _ _ _ _ _ _ _ _ _ </p>
+            <br>
+            <br>
+            <div class="introPD">
+                <div><img class="piDrC" alt="Royal Margarin Cookie" src="./img/RoyalMCoo-removebg-preview.png"></div>
+                <div class="cookiename">로얄마가린맛 쿠키</div>
+                <p class="introp">___________________________________</p>
+                <div class="rmskle">
+                    <div class="picdiv" style="text-align: right;"><img id="piDRCS" alt="RMSkill"
+                            src="./img/RotalMCooSkill-removebg-preview.png" style="text-align: right;"></div>
+                </div>
+                <div class="rmskri">
+                    <br><b>
+                        [스킬: 버터 크림 볼]
+                        버터크림 와이번에 탑승 후 공격력이 높은 적 3명에게 버터크림 볼을 3번 발사하여 피해를 입히며 중독을 부여, 공격력과 방어력을 감소시키고 해로운 효과 증가를
+                        부여. 쿨타임: 12초</b>
+                </div>
+
+            </div>
+
+            <!--float 컴으로는 가로로 폰으로는 세로로-->
+
+
+
+            <br><br>
+
+
+            <br><br><br><br><br><br>
+
+            <div class="butter">
+                <h1>_________________</h1>
+                <br>
+                <h1>용과 드래곤 쿠키의<br>
+                    과수원
+                </h1>
+                <h1>_________________</h1>
+
+                <img class="buttermade" src="./img/pidmade.gif">
+
+                <h1>“</h1><i>
+                    <h3>용과 팔아서 부자됩시다!
+                </i></h3>
+                <h1>”</h1>
+                <p>*용과 과수원에서 수확하는 모든 열매 당도 +50%</p>
+
+                <img class="butterup" src="./img/pidpid.png">
+                <h3></h3>
+            </div>
+
+            <!--크기 줄이고 문장 바꾸자-->
+            <div class="dydrhk">
+                <h3>_________________</h3>
+                <br>
+                <h3>용과 과수원만의
+                    <br> 특별한 당도!
+                </h3>
+            </div>
+            <img class="downpho" src="./img/downpho1.png">
+            <br>
+            <!--애니메이션 그래프처럼-->
+            <div class="pdragingph">
+                <button>Click!</button>
+                <br><br><br>
+                용과 드래곤 쿠키의 과수원
+                <div class="rpbu" id="buttonA"></div>
+                <hr>
+                타 왕국 과수원
+                <div class="rpbu" id="buttonB"></div>
+                <div>
+
+                    <!--<h5>____10____20____30____40____50____60____70____80____90____100</h5>-->
+                </div>
+                <br><br>
+            </div>
+
+            <div class="butter">
+                <h1>_________________</h1>
+                <br>
+                <h1>로얄마가린맛 쿠키의<br>
+                    버터공장
+                </h1>
+                <h1>_________________</h1>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./buttermade.gif">
+
+                <h1>“</h1><i>
+                    <h3>저는 세상에서 가장 빠르게 버터를 만들 수 있어요!
+                </i></h3>
+                <h1>”</h1>
+                <p>*밀키우유 가공소 생산속도 증가 +20%</p>
+
+                <img class="butterup" alt="buttermagarin" src="./img/buttermagarin.png">
+                <br>
+                <h1>_________________</h1>
+                <br>
+                <h1>[파티 초대장]</h1>
+                <h1>_________________</h1>
+                <div class="vus1">
+                    <a href="vuswl1" class="vuswl1"><img class="buttermade" id="vuswl1" alt="homebe12"
+                            src="./vuswl4."></a>
+                </div>
+                <div class="vus2" style="display: none;"><img class="buttermade" src="./vuswl3.png"></div>
+                <img class="buttermade" alt="homebe12" src="./img/home12.png.gif">
+                <p>▲파티를 준비하고 있는 쿠키들</p>
+            </div>
+            <div>
+
+            </div>
+            <div class="down">
+                <h1>_________________</h1>
+                <br>
+                <h1>쿠키들의 파티에 참석하려면?</h1>
+
+                <img class="downpho" src="./img/downpho.png">
+                <br>
+                <img class="goodw" src="./img/cookiedownload.png" alt="googledown">
+
+            </div>
+            <br>
+
+
+
+        </div>
+
+
+        <!------------두번째 블록------------------>
+
+        <div class="content" id="pubContent" style="display: none;">
+            <div>
+                <br><br><br><br>
+                <h4>_____________________</h4>
+                <h1>상호작용 모음</h1>
+                <h4>_____________________</h4>
+                <br><br><br>
+            </div>
+
+            <h4>페이지를 선택해주세요.</h4>
+            <h4>__________________</h4>
+            <p>페이지</p>
+            <div class="pib3">
+
+
+                <div class="li11"><a href="#2-1" id="pub2-1">1. 건물</a></div>
+                <br>
+                <div class="li11"><a href="#2-2" id="pub2-2">2. 쿠키</a></div>
+
+
+            </div>
+
+
+            <div class="pib">
+
+                <h1 class="content2h1">_____________________</h1>
+                <h1 class="content2h1">_._._._._._._._._._._</h1>
+                <h3>쿠키 + 건물</h3>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif01.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <h1 class="content2h1">ⅰ. 꽃잎 살랑 피크닉</h1>
+                <p class="content2p">-샤벳상어맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif.2.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <h1 class="content2h1">ⅱ. 까마귀 해먹</h1>
+                <p class="content2p">-블루베리맛 쿠키</p>
+                <p class="content2p">-정글전사맛 쿠키</p>
+                <p class="content2p">-로얄 마가린맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif3.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <h1 class="content2h1">ⅲ. 동물 음악회</h1>
+                <p class="content2p">-클로버맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif4.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <h1 class="content2h1" 1>ⅳ. 매직 카펫 라이드</h1>
+
+
+                <p class="content2p">-서리맛 쿠키</p>
+                <p class="content2p">-벨 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+            </div>
+
+            <div class="pib2" style="display: none;">
+
+                <h1 class="content2h1">_________________</h1>
+                <h3>쿠키간의 상호작용</h3>
+
+                <img class="buttermade" alt="hubcarrot" src="./img/hubcarrot.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+                <p class="content2p">-당근맛 쿠키</p>
+                <p>+</p>
+                <p class="content2p">-허브맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif2-1.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <p class="content2p">-아보카도맛 쿠키</p>
+                <p>+</p>
+                <p class="content2p">-천사맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif2-3.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <p class="content2p">-라뗴맛 쿠키</p>
+                <p>+</p>
+                <p class="content2p">-아몬드맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif2-4.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <p class="content2p">-마들렌맛 쿠키</p>
+                <p>+</p>
+                <p class="content2p">-에스프레소맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/gif2-2.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <p class="content2p">-민트초코맛 쿠키</p>
+                <p>+</p>
+                <p class="content2p">-코코아맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+                <img class="buttermade" alt="buttermagarinmade" src="./img/healer.gif">
+                <h1 class="content2h1">_________________</h1>
+                <br>
+                <p class="content2p">-커스터드 3세맛 쿠키</p>
+                <p>+</p>
+                <p class="content2p">-퓨어바닐라맛 쿠키</p>
+                <h1 class="content2h1">_________________</h1>
+                <br>
+
+
+
+            </div>
+
+        </div>
+
+        <!------------네번째 블록------------------>
+
+        <div class="content" id="cookie2Content" style="display: none;">
+            <div class="backblack" >
+            <br>
+
+            <div class="introPD">
+
+                <p class="introp">___________________________________</p>
+                <h1>자기소개</h1>
+                <p class="introp">___________________________________</p>
+                <br><br>
+                <div class="rmskle" style="text-align: right;" id="as2021"><img id="piDRCS" class="as2020" alt="PDSkill"
+                        src="./img/202020200202020.jpg" style="text-align: right;"></div>
+                <div class="rmskri" id="as2222">
+                   <br>
+                    202210811 박하은
+                    <br>
+                    강원대학교 컴퓨터공학과 22학번
+                    <br>
+                    2023년 1학기 웹프로그래밍 과제 웹페이지 만들기
+                    <br>
+                    아직 제
+                    <br>
+                    이번에 제가 좋아하는 게임중 하나인 쿠키런 킹덤이란 게임을 주제로 웹페이지를 만들어 보았습니다.
+                    작은 쿠키들을 모으고 왕국을 꾸미는 것은 제가 좋아하는 것중 하나입니다.
+                    쿠키들이 상호작용을 하고 말풍선이 하나 둘씩 떠오르는 것을 동영상으로 모으는 것도 좋아합니다.
+                    쿠키런 킹덤 완전 재밌습니다. 한 30주년까지 계속 하고 싶습니다.
+
+
+                </div>
+                <br><br><br><br>
+            </div>
+            <br>
+        </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+    <div class="conti">
+        <div class="view"></div>
+
+        <!---------->
+        <div class="foot">
+            <hr>
+            <p id="fff">웹프로그래밍 2분반 과제 202210811</p>
+
+        </div>
+
+        <script>
+            $(".homeLink").click(function (event) {
+                event.preventDefault();
+                $("#homeContent").css('display', 'block');
+                $("#pubContent").css('display', 'none');
+                $("#cookie1Content").css('display', 'none');
+                $("#cookie2Content").css('display', 'none');
+            });
+
+            $(".homeLink1").click(function (event) {
+                event.preventDefault();
+                $("#homeContent").css('display', 'block');
+                $("#pubContent").css('display', 'none');
+                $("#cookie1Content").css('display', 'none');
+                $("#cookie2Content").css('display', 'none');
+            });
+
+            $("#pubLink").click(function (event) {
+                event.preventDefault();
+                $("#homeContent").css('display', 'none');
+                $("#pubContent").css('display', 'block');
+                $("#cookie1Content").css('display', 'none');
+                $("#cookie2Content").css('display', 'none');
+            });
+
+            $("#cookie1").click(function (event) {
+                event.preventDefault();
+                $("#homeContent").css('display', 'none');
+                $("#pubContent").css('display', 'none');
+                $("#cookie1Content").css('display', 'block');
+                $("#cookie2Content").css('display', 'none');
+            });
+
+            $("#cookie2").click(function (event) {
+                event.preventDefault();
+                $("#homeContent").css('display', 'none');
+                $("#pubContent").css('display', 'none');
+                $("#cookie1Content").css('display', 'none');
+                $("#cookie2Content").css('display', 'block');
+            });
+
+            /* pub네비*/
+            $("#pub2-1").click(function (event) {
+                event.preventDefault();
+                $(".pib").css('display', 'block');
+                $(".pib2").css('display', 'none');
+            });
+
+            $("#pub2-2").click(function (event) {
+                event.preventDefault();
+                $(".pib").css('display', 'none');
+                $(".pib2").css('display', 'block');
+
+            });
+
+
+            $(".vus1").click(function (event) {
+                event.preventDefault();
+                $(".vus1").css('display', 'none');
+                $(".vus2").css('display', 'block');
+
+
+            });
+            $(document).ready(function () {
+                $(".navbar__toggleBtn").on("click", function () {
+                    $(".navbar__menu").toggleClass("active");
+                    $(".navbar__icons").toggleClass("active");
+                });
+            });
+
+            $(document).ready(function () {
+                $('button').click(function () {
+                    $('#buttonA').animate({
+                        width: '80%'
+                    }, 2000, 'swing');
+                    $('#buttonB').animate({
+                        width: '50%'
+                    }, 2000, 'linear');
+                });
+            });
+
+        </script>
+</body>
+
+</html>
