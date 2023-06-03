@@ -948,48 +948,53 @@
 
         <script>
             $(".homeLink").click(function (event) {
+                $(location).attr("href", "#1");
                 event.preventDefault();
                 $("#homeContent").css('display', 'block');
                 $("#pubContent").css('display', 'none');
                 $("#cookie1Content").css('display', 'none');
                 $("#cookie2Content").css('display', 'none');
-                $(location).attr("href", "#1");
+                
             });
 
 
             $("#pubLink").click(function (event) {
+                $(location).attr("href", "#2-1");
                 event.preventDefault();
                 $("#homeContent").css('display', 'none');
                 $("#pubContent").css('display', 'block');
                 $("#cookie1Content").css('display', 'none');
                 $("#cookie2Content").css('display', 'none');
-                $(location).attr("href", "#2-1");
+                
             });
 
             
 
             $("#cookie2").click(function (event) {
+                $(location).attr("href", "#3");
                 event.preventDefault();
                 $("#homeContent").css('display', 'none');
                 $("#pubContent").css('display', 'none');
                 $("#cookie1Content").css('display', 'none');
                 $("#cookie2Content").css('display', 'block');
-                $(location).attr("href", "#3");
+                
             });
 
             /* pub네비*/
             $("#pub2-1").click(function (event) {
+                $(location).attr("href", "#2-1");
                 event.preventDefault();
                 $(".pib").css('display', 'block');
                 $(".pib2").css('display', 'none');
-                $(location).attr("href", "#2-1");
+                
             });
 
             $("#pub2-2").click(function (event) {
+                $(location).attr("href", "#2-2");
                 event.preventDefault();
                 $(".pib").css('display', 'none');
                 $(".pib2").css('display', 'block');
-                $(location).attr("href", "#2-2");
+                
             });
 
 
